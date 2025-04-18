@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
     const navItems = [
-        { id: 1, text: "Crypto", path: "/" },
-        { id: 2, text: "GainLose", path: "/gainlose" },
+        { id: 1, text: "Panel1", path: "/" },
+        { id: 2, text: "Panel2", path: "/gainlose" },
     ];
 
     return (
