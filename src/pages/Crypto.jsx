@@ -44,8 +44,8 @@ const Crypto = () => {
     };
     useEffect(() => {
         fetchCryptoData(); // initial fetch
-        // const interval = setInterval(fetchCryptoData, 40000); // every 40 seconds
-        // return () => clearInterval(interval); // cleanup on unmount
+        const interval = setInterval(fetchCryptoData, 40000); // every 40 seconds
+        return () => clearInterval(interval); // cleanup on unmount
     }, []);
     return (
         <div className="d-flex  bg-light">
